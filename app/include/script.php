@@ -1,0 +1,103 @@
+<!-- Jquery Core Js -->
+
+<!-- Jquery Core Js -->
+<script src="plugins/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core Js -->
+<script src="plugins/bootstrap/js/bootstrap.js"></script>
+
+<!-- Select Plugin Js -->
+<script src="plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+<!-- Slimscroll Plugin Js -->
+<script src="plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+<!-- Waves Effect Plugin Js -->
+<script src="plugins/node-waves/waves.js"></script>
+
+<!-- Autosize Plugin Js -->
+<script src="plugins/autosize/autosize.js"></script>
+
+<!-- Moment Plugin Js -->
+<script src="plugins/momentjs/moment.js"></script>
+
+<!-- Bootstrap Material Datetime Picker Plugin Js -->
+<script src="plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
+<!-- Custom Js -->
+<script src="js/pages/forms/basic-form-elements.js"></script>
+<script>
+	$('#date').bootstrapMaterialDatePicker({
+		weekStart: 0,
+		time: false
+	});
+	$('#date2').bootstrapMaterialDatePicker({
+		weekStart: 0,
+		time: false
+	});
+</script>
+<!-- Demo Js -->
+<script src="js/demo.js"></script>
+
+<!-- Jquery DataTable Plugin Js -->
+<script src="plugins/jquery-datatable/jquery.dataTables.js"></script>
+<script src="plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
+<script src="plugins/jquery-datatable/extensions/export/dataTables.buttons.min.js"></script>
+<script src="plugins/jquery-datatable/extensions/export/buttons.flash.min.js"></script>
+<script src="plugins/jquery-datatable/extensions/export/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.5/pdfmake.min.js" integrity="sha512-rDbVu5s98lzXZsmJoMa0DjHNE+RwPJACogUCLyq3Xxm2kJO6qsQwjbE5NDk2DqmlKcxDirCnU1wAzVLe12IM3w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="plugins/jquery-datatable/extensions/export/vfs_fonts.js"></script>
+<script src="plugins/jquery-datatable/extensions/export/buttons.html5.min.js"></script>
+<script src="plugins/jquery-datatable/extensions/export/buttons.print.min.js"></script>
+<!-- Custom Js -->
+<script src="js/admin.js"></script>
+<script src="js/pages/tables/jquery-datatable.js"></script>
+<!-- Edit -->
+<script type="text/javascript">
+	$(document).on('click', '.pilihan', function() {
+		document.getElementById("nik").value = $(this).attr('a1');
+		document.getElementById("nama").value = $(this).attr('a2');
+		document.getElementById("no_telp").value = $(this).attr('a3');
+		document.getElementById("jk").value = $(this).attr('a4');
+		document.getElementById("agama").value = $(this).attr('a5');
+		document.getElementById("lokasi").value = $(this).attr('a6');
+		document.getElementById("divisi").value = $(this).attr('a7');
+		document.getElementById("date").value = $(this).attr('a8');
+		document.getElementById("date2").value = $(this).attr('a9');
+		document.getElementById("file").value = $(this).attr('a10');
+	});
+</script>
+<!-- Edit Lokasi -->
+<script type="text/javascript">
+	$(document).on('click', '.pilih_lokasi', function() {
+		document.getElementById("id").value = $(this).attr('l1');
+		document.getElementById("kode").value = $(this).attr('l2');
+		document.getElementById("lokasi").value = $(this).attr('l3');
+	});
+</script>
+<!-- Edit divisi -->
+<script type="text/javascript">
+	$(document).on('click', '.pilih_divisi', function() {
+		document.getElementById("id").value = $(this).attr('divisi1');
+		document.getElementById("kode_divisi").value = $(this).attr('divisi2');
+		document.getElementById("divisi").value = $(this).attr('divisi3');
+	});
+</script>
+<!-- Edit absensi---->
+<script type="text/javascript">
+	$(document).on('click', '.pilih_absen', function() {
+		document.getElementById("nik_pegawai").value = $(this).attr('p1');
+		document.getElementById("masuk").value = $(this).attr('p2');
+		document.getElementById("pulang").value = $(this).attr('p3');
+		document.getElementById("tanggal").value = $(this).attr('p4');
+	});
+</script>
+<!-- Edit user---->
+<script type="text/javascript">
+	$(document).on('click', '.pilih_user', function() {
+		document.getElementById("id_user").value = $(this).attr('u1');
+		document.getElementById("username").value = $(this).attr('u2');
+		document.getElementById("nama_user").value = $(this).attr('u4');
+		document.getElementById("password").value = $(this).attr('u3');
+	});
+</script>
